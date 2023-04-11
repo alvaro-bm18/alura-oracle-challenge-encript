@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet" />
     <title>Alura challenge | encriptador de palabras</title>
 </head>
+
 <body>
+    <div class="app-input">
+        <header>
+            <img src="assets/Logo.png" alt="logo alura" title="ir a Alura.com" class="logo" />
+        </header>
+        <section>
+            <textarea class="input" placeholder="Ingrese el texto aquí"></textarea>
+        </section>
+        <footer>
+            <p>Solo letras minúsculas y sin acentos</p>
+            <div>
+                <button class="encr">Encriptar</button>
+                <button class="dese">Desencriptar</button>
+            </div>
+        </footer>
+    </div>
+    <div class="app-output">
+        <div class="empty-output">
+            <img src="assets/Muñeco.png" alt="ilustración muñeco" title="No hay texto" />
+            <h4>Ningún mensaje fue encontrado</h4>
+            <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+        </div>
+        <div class="output">
+            <p class="text-output"></p>
+            <button class="copy">Copiar</button>
+        </div>
+    </div>
     <script src="scripts/encript.js"></script>
+    <script src="scripts/helpers.js"></script>
 </body>
+
 </html>
